@@ -22,7 +22,7 @@ if SERVER then
 else
   cable.receive('message_name', function(a, b, c)
     print(a, b, c) -- will print 1 false table
-  end
+  end)
 end
 ```
 
@@ -33,6 +33,6 @@ if SERVER then
 else
   cable.receive('message_name', function(a, b, c)
     print(a, b, c) -- will print 1 false table
-  end
+  end)
 end
 ```
