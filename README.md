@@ -28,7 +28,7 @@ end
 
 Send a message from client to server:
 ```lua
-if SERVER then
+if CLIENT then
   cable.send('message_name', 1, false, { 1, 2, 3 })
 else
   cable.receive('message_name', function(a, b, c)
