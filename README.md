@@ -31,7 +31,7 @@ Send a message from client to server:
 if CLIENT then
   cable.send('message_name', 1, false, { 1, 2, 3 })
 else
-  cable.receive('message_name', function(a, b, c)
+  cable.receive('message_name', function(player, a, b, c)
     print(a, b, c) -- will print 1 false table
   end)
 end
